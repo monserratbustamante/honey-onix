@@ -22,7 +22,7 @@ class InicioActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         if(auth.currentUser == null){
-            startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(Intent(this, RollActivity::class.java))
             finish()
         }
 
@@ -30,7 +30,7 @@ class InicioActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.linear3.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(Intent(this, RollActivity::class.java))
             finish()
         }
 

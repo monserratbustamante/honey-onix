@@ -8,19 +8,37 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/fondo_abeja"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.HoneyOnix"
         tools:targetApi="31">
         <activity
+            android:name=".RegitroAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RollActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAdmibActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CambioPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistarProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogoActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Register"
-            android:exported="false" />
-        <activity
-            android:name=".RegistroActivity"
             android:exported="false" />
         <activity
             android:name=".CarritoActivity"
@@ -30,9 +48,6 @@
             android:exported="false" />
         <activity
             android:name=".InicioActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

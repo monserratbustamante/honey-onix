@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.honeyonix.InicioActivity
-import com.example.honeyonix.MainActivity
 import com.example.honeyonix.RegisterActivity
 import com.example.honeyonix.databinding.ActivityLoginBinding
 
@@ -21,6 +20,10 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RegisterActivity::class.java))
             finish()
         }
+        binding.forgotPasswordTV.setOnClickListener {
+            startActivity(Intent(this, CambioPassActivity::class.java))
+            finish()
+        }
 
         binding.loginBtn.setOnClickListener {
             val email = binding.emailLogin.text.toString()
@@ -28,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
             if(email.isNotEmpty() && password.isNotEmpty())
                 InicioActivity.auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if(it.isSuccessful){
-                        startActivity(Intent(this, MainActivity::class.java))
+                        startActivity(Intent(this, CatalogoActivity::class.java))
                         finish()
                     }
                 }.addOnFailureListener {

@@ -85,7 +85,7 @@ class RegisterActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Sign In successful", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, InicioActivity::class.java))
+                    startActivity(Intent(this, CatalogoActivity::class.java))
                     finish()
                 } else {
                     Toast.makeText(this, "Authentication Failed: ${task.exception?.localizedMessage}", Toast.LENGTH_LONG).show()
