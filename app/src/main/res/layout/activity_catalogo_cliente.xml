@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo1"
     android:textAlignment="center"
-    tools:context=".CatalogoActivity">
+    tools:context=".CatalogoClienteActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -73,12 +73,12 @@
                         <ImageView
                             android:id="@+id/image3"
                             android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        app:layout_constraintEnd_toEndOf="@id/image2"
-                        app:layout_constraintTop_toTopOf="@id/image2"
-                        app:layout_constraintHorizontal_bias="0.9"
-                        app:layout_constraintVertical_bias="0.1"
-                        app:srcCompat="@drawable/red_circle" />
+                            android:layout_height="15dp"
+                            app:layout_constraintEnd_toEndOf="@id/image2"
+                            app:layout_constraintTop_toTopOf="@id/image2"
+                            app:layout_constraintHorizontal_bias="0.9"
+                            app:layout_constraintVertical_bias="0.1"
+                            app:srcCompat="@drawable/red_circle" />
 
                         <TextView
                             android:id="@+id/textview5"
@@ -353,13 +353,13 @@
                                 android:id="@+id/imagenn"
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
-                                android:src="@drawable/btn_4" />
+                                android:src="@drawable/btn_5" />
 
                             <TextView
                                 android:id="@+id/texw"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Menu"
+                                android:text="Perfil"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
                                 android:textSize="10sp"
@@ -371,4 +371,4 @@
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

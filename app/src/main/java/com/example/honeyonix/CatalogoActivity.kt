@@ -1,13 +1,13 @@
 package com.example.honeyonix
 
+
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.PopupMenu
 import androidx.activity.ComponentActivity
 import com.example.honeyonix.databinding.ActivityCatalogoBinding
-import android.content.Context.MODE_PRIVATE
 import android.content.Intent
-import com.example.honeyonix.R
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -40,14 +40,12 @@ public class CatalogoActivity : ComponentActivity() {
                 when (item.itemId) {
                     R.id.menu_Registrar -> {
                         // Acción para Opción 1: Ir a la primera actividad
-                        startActivity(Intent(this, RegistarProductoActivity::class.java))
+                        startActivity(Intent(this, AgregarProductoActivity::class.java))
                         true
                     }
                     R.id.menu_Cuenta -> {
-                        // Acción para Cerrar sesión
-                        logout()
-                        true
-                    }
+                        startActivity(Intent(this, PerfilAdminActivity::class.java))
+                        true                    }
                     else -> false
                 }
             }
@@ -60,10 +58,7 @@ public class CatalogoActivity : ComponentActivity() {
             startActivity(Intent(this, CarritoActivity::class.java))
             finish()
         }
-        binding.Perfil.setOnClickListener {
-            startActivity(Intent(this, PerfilAdminActivity::class.java))
-            finish()
-        }
+
         binding.Explorar.setOnClickListener {
             startActivity(Intent(this, CatalogoActivity::class.java))
             finish()

@@ -16,25 +16,35 @@ class CambioPassActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCambioPassBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Definir el título de la acción
         supportActionBar?.title = "Recuperar Contraseña"
+
+        // Inicializar Firebase Auth
+        auth = FirebaseAuth.getInstance()
+
+        // Manejar el clic en el botón de regresar
         binding.regresar1.setOnClickListener {
+            // Regresa a la actividad de inicio de sesión
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
-        // Initialize Firebase Auth
-        auth = FirebaseAuth.getInstance()
 
-        // Handle Reset Password Button click
+        // Handle Reset Password button click
         binding.RecuperarBtn.setOnClickListener {
-            val email = binding.emailInput.text.toString()
+            val email = binding.emailInput.text.toString().trim()  // Limpiar espacios en blanco
             if (email.isNotEmpty()) {
+                // Enviar correo de recuperación de contraseña
                 auth.sendPasswordResetEmail(email)
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
                             Toast.makeText(this, "Correo de recuperación enviado.", Toast.LENGTH_SHORT).show()
                         } else {
-                            Toast.makeText(this, "No se pudo enviar el correo de recuperación.", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "No se pudo enviar el correo de recuperación.", Toast.LENGTH_LONG).show()
                         }
+                    }.addOnFailureListener { exception ->
+                        // Maneja el caso en que hubo un error enviando el correo
+                        Toast.makeText(this, "Error: ${exception.localizedMessage}", Toast.LENGTH_LONG).show()
                     }
             } else {
                 Toast.makeText(this, "Por favor, ingrese su correo electrónico.", Toast.LENGTH_SHORT).show()

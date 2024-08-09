@@ -20,6 +20,12 @@
     <string name="recuperar">Recuperar Contraseña </string>
     <string name="id_cliente">361752021224-jbjscf5m9hhbj3l0o1g94q13khni1d9f.apps.googleusercontent.com</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Agregar">Agregar productos</string>
+    <string name="priceP">Precio</string>
+    <string name="categoryP">Categoria</string>
+    <string name="stockP">Disponible</string>
+    <string name="codeP">Codigo</string>
+    <string name="data">Dato</string>
 
 </resources>
