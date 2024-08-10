@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/borrar"
+                android:id="@+id/btnEliminar"
                 android:layout_width="49dp"
                 android:layout_height="44dp"
                 android:layout_alignParentEnd="true"

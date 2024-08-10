@@ -43,6 +43,11 @@ public class CatalogoActivity : ComponentActivity() {
                         startActivity(Intent(this, RegistroProductActivity::class.java))
                         true
                     }
+                    R.id.menu_Lista -> {
+                        // Acción para Opción 1: Ir a la primera actividad
+                        startActivity(Intent(this, ListaActivity::class.java))
+                        true
+                    }
                     R.id.menu_Cuenta -> {
                         startActivity(Intent(this, PerfilAdminActivity::class.java))
                         true                    }

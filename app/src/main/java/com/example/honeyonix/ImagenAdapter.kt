@@ -11,12 +11,17 @@ import com.bumptech.glide.Glide
 class ImagenAdapter(private val imagenUris: List<Uri>) : RecyclerView.Adapter<ImagenAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imageView: ImageView = itemView.findViewById(R.id.item_imagen) // Asegúrate de que tienes un layout para los items
+        val imageView: ImageView =
+            itemView.findViewById(R.id.item_imagen) // Asegúrate de que tienes un layout para los items
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_imagen_selecciona, parent, false) // Asegúrate de tener un layout llamado item_imagen_selecciona.xml
+            .inflate(
+                R.layout.item_imagen_selecciona,
+                parent,
+                false
+            ) // Asegúrate de tener un layout llamado item_imagen_selecciona.xml
         return ViewHolder(view)
     }
 
@@ -30,4 +35,5 @@ class ImagenAdapter(private val imagenUris: List<Uri>) : RecyclerView.Adapter<Im
     override fun getItemCount(): Int {
         return imagenUris.size
     }
+
 }
