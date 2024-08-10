@@ -40,7 +40,7 @@ public class CatalogoActivity : ComponentActivity() {
                 when (item.itemId) {
                     R.id.menu_Registrar -> {
                         // Acción para Opción 1: Ir a la primera actividad
-                        startActivity(Intent(this, AgregarProductoActivity::class.java))
+                        startActivity(Intent(this, RegistroProductActivity::class.java))
                         true
                     }
                     R.id.menu_Cuenta -> {

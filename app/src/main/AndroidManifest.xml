@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,37 +15,13 @@
         android:theme="@style/Theme.HoneyOnix"
         tools:targetApi="31">
         <activity
-            android:name=".AgregarProductoActivity"
+            android:name=".ImagenAdapter"
             android:exported="false" />
         <activity
-            android:name=".Producto.AgregarProductoActivity"
+            android:name=".Producto"
             android:exported="false" />
         <activity
-            android:name=".iu.Make"
-            android:exported="false" />
-        <activity
-            android:name=".Firebase.FirestoreConstans"
-            android:exported="false" />
-        <activity
-            android:name=".Firebase.FirebaseFirestore"
-            android:exported="false" />
-        <activity
-            android:name=".Firebase.FirestoreInstance"
-            android:exported="false" />
-        <activity
-            android:name=".Base.fire"
-            android:exported="false" />
-        <activity
-            android:name=".iu.Stador"
-            android:exported="false" />
-        <activity
-            android:name=".adapter.ProductAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".Model.ProductModel"
-            android:exported="false" />
-        <activity
-            android:name=".producto.ProductActivity"
+            android:name=".RegistroProductActivity"
             android:exported="false" />
         <activity
             android:name=".CatalogoClienteActivity"
@@ -53,22 +30,10 @@
             android:name=".RegistroAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".RegitroAdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RollActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginAdmibActivity"
-            android:exported="false" />
-        <activity
             android:name=".CambioPassActivity"
             android:exported="false" />
         <activity
             android:name=".PagoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".producto.RegistarProductoActivity"
             android:exported="false" />
         <activity
             android:name=".PerfilAdminActivity"

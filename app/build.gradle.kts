@@ -55,9 +55,11 @@ dependencies {
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.database)
+    implementation(libs.firebase.storage.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     implementation("com.tbuonomo:dotsindicator:4.3")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
     androidTestImplementation(libs.androidx.espresso.core)
 
 

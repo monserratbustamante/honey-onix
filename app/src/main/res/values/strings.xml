@@ -21,11 +21,14 @@
     <string name="id_cliente">361752021224-jbjscf5m9hhbj3l0o1g94q13khni1d9f.apps.googleusercontent.com</string>
     <!-- TODO: Remove or change this placeholder text -->
 
-    <string name="Agregar">Agregar productos</string>
-    <string name="priceP">Precio</string>
-    <string name="categoryP">Categoria</string>
-    <string name="stockP">Disponible</string>
-    <string name="codeP">Codigo</string>
-    <string name="data">Dato</string>
+    <string name="txtAgregarProductos">Add products</string>
+    <string name="etNombre">Product name</string>
+    <string name="etDescripcion">Description</string>
+    <string name="etCategoria">Category</string>
+    <string name="etPrecio">Price</string>
+    <string name="etDescuento">Discount</string>
+    <string name="etPrecioConDescuento">Price with discount applied</string>
+    <string name="etNotaDescuento">E.g.: 10% Off</string>
+    <string name="btnAgregarProducto">Add product</string>
 
 </resources>
